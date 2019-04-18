@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -127,7 +127,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log(\"hello webpack\");\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconst menuBtn = document.querySelector('.menu-btn');\nconst menu = document.querySelector('.menu');\nconst menuNav = document.querySelector('.menu-nav');\nconst menuBranding = document.querySelector('.menu-branding');\nconst navItems = document.querySelectorAll('.nav-item'); // Initial state of menu\n\nlet showMenu = false;\nmenuBtn.addEventListener('click', toggleMenu);\n\nfunction toggleMenu() {\n  if (!showMenu) {\n    menuBtn.classList.add('close');\n    menu.classList.add('show');\n    menuNav.classList.add('show');\n    menuBranding.classList.add('show');\n    navItems.forEach(item => item.classList.add('show'));\n    showMenu = true;\n  } else {\n    menuBtn.classList.remove('close');\n    menu.classList.remove('show');\n    menuNav.classList.remove('show');\n    menuBranding.classList.remove('show');\n    navItems.forEach(item => item.classList.remove('show'));\n    showMenu = false;\n  }\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
