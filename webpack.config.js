@@ -50,6 +50,12 @@ module.exports = {
             hash: true,
             template: './src/work.html',
             filename: 'work.html'
-        })
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/contact.html',
+            filename: 'contact.html'
+        }),
     ]
 };
